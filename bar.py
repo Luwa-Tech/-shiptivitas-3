@@ -1,8 +1,9 @@
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the CSV file into a Pandas DataFrame
-csv_file = 'C:\\Users\\Luwa\Documents\\task3\\daily_active_users.csv'  # Replace with the path to your CSV file
+csv_file = '/workspaces/-shiptivitas-3/daily_active_users.csv'  # Replace with the path to your CSV file
 df = pd.read_csv(csv_file)
 
 # Ensure the 'date' column is in datetime format
@@ -27,4 +28,4 @@ plt.grid(True, linestyle='--', alpha=0.6)
 plt.tight_layout()
 
 # Show the plot
-plt.show()
+plt.savefig("plot.png") 
